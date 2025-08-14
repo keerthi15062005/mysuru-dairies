@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body  class="back">
+    <h1 class="h1">contact us</h1>
+    <form action="" method="post" class="form">
+        <table>
+            <div class="div">
+            <tr class="tr1">
+                <th class="th1">
+                    Name :
+                </th>
+                <td><input type="text" id="name" placeholder="enter your name"></td>
+            </tr></div>
+            <div><tr class="tr2">
+                <th class="th2">
+                    Email :
+                </th><br>
+                <td><input type="email" id="email" placeholder="enter your email"></td>
+            </tr></div>
+            <tr class="tr3">
+                <th class="th3">
+                Phone number :
+                </th>
+                <td><input type="number"  id="phone" placeholder="enter your Phone number"></td>
+            </tr>
+            <tr class="tr4">
+                <th class="th4">
+                    Destination :
+                </th>
+                <td><input type="text" id="destination" placeholder="enter your  destination"></td>
+            </tr>
+            <tr class="tr5">
+                <th class="th5">
+                    requirements or special message :
+                </th>
+                <td><textarea type="text" placeholder="enter your Requirements" id="requirements"></textarea></td>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="ValidateForm()" type="button" class="button"><b>Book your slot</b></button>
+                </th>
+            </tr>
+    </table>
+    </form>
+    <script>
+        function ValidateForm()
+        {
+            var n=document.getElementById("name").value;
+            var e=document.getElementById("email").value;
+            var p=document.getElementById("phone").value;
+            var d=document.getElementById("destination").value;
+            var r=document.getElementById("requirements").value;
+            if(n==""||e==""||p==""||d==""||r=="")
+        {
+            alert("mandatory to fill all the fields");
+        }
+        else{
+            alert("successfully booked your slot we will contact you shortly")
+        }
+
+        }
+    </script>
+    
+</body>
+</html>
